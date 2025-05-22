@@ -39,21 +39,3 @@ window {
   color: inherit;
 }
 
-
-/*window {
-    background-color: rgba(30, 30, 30, 0.95);
-    border-radius: 12px;
-    font-family: 'JetBrains Mono', monospace;
-}
-
-#entry {
-    padding: 6px;
-    border-radius: 6px;
-    color: red;
-}
-
-#entry:selected {
-    background-color: #4c566a;
-    color: white;
-}
-*/
