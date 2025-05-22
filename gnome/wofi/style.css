@@ -1,0 +1,59 @@
+window {
+  background-color: rgba(30, 30, 30, 0.75);  /* fondo oscuro semiopaco */
+  border-radius: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #ffffff; /* color del texto por defecto */
+}
+
+#input {
+  margin: 10px;
+  padding: 8px;
+  background-color: #1e1e1e;
+  color: #ffffff;   /* color del texto en el campo de entrada */
+  border-radius: 8px;
+  border: none;
+}
+
+#input:focus {
+  background-color: #2a2a2a;
+}
+
+#entry {
+  padding: 10px;
+  border-radius: 8px;
+  color: #cccccc;     /* color del texto normal */
+  background-color: transparent;
+}
+
+#entry:selected {
+  background-color: #4c566a;  /* fondo del elemento seleccionado */
+  color: #ffffff;             /* texto resaltado */
+}
+
+#text {
+  color: inherit;
+}
+
+#text:selected {
+  color: inherit;
+}
+
+
+/*window {
+    background-color: rgba(30, 30, 30, 0.95);
+    border-radius: 12px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#entry {
+    padding: 6px;
+    border-radius: 6px;
+    color: red;
+}
+
+#entry:selected {
+    background-color: #4c566a;
+    color: white;
+}
+*/

@@ -1,0 +1,8 @@
+width=600
+height=300
+allow_markup=true
+location=center
+show=drun
+prompt=>
+insensitive=true
+term=gnome-terminal
