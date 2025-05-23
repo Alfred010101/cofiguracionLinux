@@ -24,6 +24,12 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+#Verifica script de git prompt
+if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
+    source /usr/share/git-core/contrib/completion/git-prompt.sh
+fi
+
+
 get_ip() {
     # Obtiene la IP IPv4 de la interfaz principal (puedes cambiar 'ip route' para elegir otra)
     ip addr show $(ip route get 1.1.1.1 | awk '{print $5}') 2>/dev/null | 
@@ -31,7 +37,7 @@ get_ip() {
 }
 
 
-PS1='\[\e[44;38m\]\u@$(get_ip):\w\[\e[0m\]\n >\$\[\e[0m\] '
+PS1='\[\e[44;38m\]\u@$(get_ip):\w \[\e[45;32m\]$(__git_ps1 "(%s)")\[\e[0m\]\n >\$\[\e[0m\] '
 
 export PATH=$PATH:/opt/gradle/gradle-8.14/bin
 
